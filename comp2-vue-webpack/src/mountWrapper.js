@@ -6,9 +6,9 @@ import Header from './Header.vue'
 
 // createApp(App).mount('#app')
 
-export default (el, comp) => {
-    
+export default (el, comp=App, props) => {
 
-    console.log('comp', comp)
-    createApp(Header).mount(el)
+    console.log(comp)
+    
+    createApp(comp, props).mount(el)
 }

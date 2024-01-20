@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  msg: {
+  projectName: {
     type: String,
     required: true
   }
@@ -9,16 +9,20 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
     <h3>
       You’ve successfully imported a component created using with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vue</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Webpack 3</a>.
+      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vue 3</a> +
+      <a href="https://vuejs.org/" target="_blank" rel="noopener">Webpack</a>
+      inside `{{projectName}}`.
     </h3>
   </div>
 </template>
 
 <style scoped>
+a{
+  color: #8da5e2
+}
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
@@ -28,6 +32,13 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+.greetings {
+  background: #282c34;
+  color: white;
+  min-height: 100vh;
+  padding-top: 5rem;
 }
 
 .greetings h1,

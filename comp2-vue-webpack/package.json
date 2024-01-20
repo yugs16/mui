@@ -8,10 +8,6 @@
         "start:live": "webpack-dev-server --open --mode development --liveReload"
     },
     "license": "MIT",
-    "author": {
-        "name": "Jack Herrington",
-        "email": "jherr@pobox.com"
-    },
     "dependencies": {
         "mod1": "file:mod1-1.0.0.tgz",
         "vue": "^3.4.14",

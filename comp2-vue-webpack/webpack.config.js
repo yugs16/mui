@@ -35,20 +35,16 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+        // More information here https://webpack.js.org/guides/asset-modules/
+        type: "asset",
+      },
     ],
   },
 
   plugins: [
     new VueLoaderPlugin(),
-    // federation({
-    //     name: "comp2",
-    //     filename: "comp2-app.js",
-    //     exposes: {
-    //       "./Comp2App": "./src/bootstrap",
-    //     },
-    //     shared: ['vue']
-    // })
-
     new ModuleFederationPlugin({
       name: "comp2Webpack",
       filename: "comp2-webpack-app.js",

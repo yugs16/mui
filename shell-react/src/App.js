@@ -9,18 +9,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import mountWrapper from 'comp2Webpack/mountWrapper';
 
 const RemoteComp1 = React.lazy(() => import("comp1/Comp1App"));
-
-
-// const RemoteComp2 = React.lazy(() => import("comp2/Comp2App"));
-
-
 function RemoteApp2 (props) {
 
   const divRef = useRef(null);
 
+  console.log(props, 'check')
+
   useEffect(()=>{
     import("comp2Webpack/Comp2WebPackApp").then((comp)=>{
-      mountWrapper(divRef.current, comp);
+      mountWrapper(divRef.current, comp.default, {...props});
     }).catch(e=>{throw e;});
 
   }, [])
@@ -38,7 +35,6 @@ function App() {
         <nav class="nav nav-pills nav-fill">
           <a class="nav-link active" aria-current="page" href="/comp">Component React</a>
           <a class="nav-link active" aria-current="page" href="/vue">Component Vue</a>
-          
           <a class="nav-link active" aria-current="page" href="/vite">Component Vite</a>
         </nav>
         <div>Remote</div>
