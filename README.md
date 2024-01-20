@@ -8,8 +8,8 @@ We are trying to use UI components created in a separate hosted application in a
 The repo contains 3 mini-projects/applications. We have 2 remote applications and 1 host application.
 
 **Remote:** 
-- Comp1-react-webpack: It's configured using react+webpack.
-- Comp2-vue-webpack: It's configured using vue+webpack.
+- Comp1-react-webpack: It's configured using *react+webpack*.
+- Comp2-vue-webpack: It's configured using *vue+webpack*.
 
 **Host:**
 - Shell directory acts as a main host application, it is configured using react+webpack.
