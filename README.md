@@ -106,5 +106,6 @@ function RemoteApp2 (props) {
   )
 }
 ```
+**- Also note that a prop, `prjectName='main'` is being passed in both react and vue components from the shell project, just to showcase the exchange of data.**
 
 
