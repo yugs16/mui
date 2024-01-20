@@ -1,4 +1,4 @@
-# MUI
+# MUI (Micro Frontend UI)
 
 A small test project to understand Micro Frontend rendering using **Module Federation** library, ie, [MFE](https://www.npmjs.com/package/@module-federation/node).
 
