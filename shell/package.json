@@ -1,0 +1,61 @@
+{
+  "name": "shell",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "mod1": "file:mod1-1.0.0.tgz",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2",
+    "react-scripts": "^3.0.1",
+    "vue": "^3.4.14",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "web-start": "webpack serve --open --mode development",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.14.5",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.3.0",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^3.3.0",
+    "svg-inline-loader": "^0.8.2",
+    "tailwindcss": "^2.0.2",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
